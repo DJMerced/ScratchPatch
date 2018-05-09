@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Heisenberg</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ScratchPatch</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   </head>
 
-  <body>
-  <nav>
-  <ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", simple_pages_about_path %></li>
-    <li><%= link_to "Contact", simple_pages_contact_path %></li>
-  </ul>
-</nav>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <header>
+      <nav  class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="projectName navbar-brand">
+              <a href="#">ScratchPatch</a>
+            </div> <!--end projectName -->
+          </div> <!--end navbar-header -->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div><!--end nav-->
+        </div><!--end nav container-->
+      </nav> <!-- end navbar-->
+    </header>
+
     <%= yield %>
+
     <footer>
-      &copy; 2018 Red Lamb Labs
+        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fkeen-tesla-ac26e3.bitballoon.com%2F&width=96&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="fb-butt"></iframe>
+        <p>&copy David Merced 2018</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </body>
 </html>

@@ -1,3 +1,107 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/*******************************GENERAL********************************/
+/************general***********/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.anchor {
+  padding-top: 50px;
+}
+
+/***********gen-navbar*************/
+
+/**********gen-body**********/
+
+.body {
+  margin: 10px auto;
+  width: 80%;
+}
+
+/**********gen-type**************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bree Serif', 'Times New Roman', serif;
+}
+
+p {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/************color, style*******/
+html {
+  background: black;
+}
+
+section {
+  background: linear-gradient(black, #256E5E);
+}
+
+.projectName a{
+  text-decoration: none;
+}
+/******pseudo**********/
+.projectName a:hover {
+  color: #AA7939;
+}
+
+
+/*****************************INDEX*************************************/
+/*general*/
+
+.projectName a {
+  color: white;
+}
+
+.introbutt {
+  color: #86AAA2;
+  background-color: black;
+  border-color: #86AAA2;
+}
+
+.introbutt a {
+  text-decoration: none;
+  color: #86AAA2;
+}
+
+
+/*******************footer**************************/
+footer {
+  background-color: black;
+  margin-top: 50px;
+}
+
+#fb-butt {
+  margin: 15px 15px;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer p {
+  display: inline-block;
+  float:right;
+  padding: 15px 15px;
+}
+
+footer ul a:hover {
+  color: #AA7939;
+}
