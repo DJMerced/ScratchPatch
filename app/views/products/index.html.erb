@@ -1,16 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<section class="jumbo">
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <h1>Products</h1>
+    </div>
+  </div>
+
+  <hr>
+
+
+</section>
 
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-    <div class="col-sm-2 col-md-4">
+    <div class="col-md-6 col-xs-12">
       <div class="prodImg">
+      <a href="#"><h3><%= product.name %></h3></a>
       <%= image_tag(product.image_url, class: "img-responsive") %>
       </div>
       <div class="prodInfo">
-        <a href="#"><h3><%= product.name %></h3></a>
         <p><%= product.description %></p>
         <p>Colour: <%= product.colour %></p>
         <strong>$ <%= product.price %></strong>
