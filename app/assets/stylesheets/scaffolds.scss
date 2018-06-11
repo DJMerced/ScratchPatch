@@ -26,10 +26,6 @@ a {
     color: #666;
   }
 
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
 }
 
 th {
@@ -81,4 +77,9 @@ div {
 
 label {
   display: block;
+}
+
+a:hover {
+  color: #FFC18F;
+  text-decoration: none;
 }

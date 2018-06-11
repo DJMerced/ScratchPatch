@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar a {
   font-size: 1.2em;
-  color: white;
   letter-spacing: 0.05em;
 }
 
@@ -49,6 +48,32 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+#landover {
+  line-height: 10px;
+}
+
+#homeover a,
+#prodover a,
+#orderover a,
+#aboutover a,
+#conover a {
+  font-family: 'Denk One', sans-serif;
+}
+
+#homeover a:hover,
+#prodover a:hover,
+#orderover a:hover,
+#aboutover a:hover,
+#conover a:hover {
+  color: #FFC18F;
+  text-decoration: none;
+}
+
+#searchbar {
+  margin-top: 10px;
+  margin-right: 15px;
 }
 
 /***************FOOTER**************/
