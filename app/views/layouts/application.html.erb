@@ -41,12 +41,8 @@
               <li id="orderover"><%= link_to "Orders", orders_url %></li>
               <li id="aboutover"><%= link_to "About", simple_pages_about_url %></li>
               <li id="conover"><%= link_to "Contact", simple_pages_contact_url %></li>
-              <li id="searchbar"><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-                <%= form.text_field :q, id: 'q', value: params[:q] %>
-                <%= form.submit 'Search' %>
-              <% end %></li>
             </ul>
-          </div><!--end nav-->
+          </div>
         </div><!--end nav container-->
       </nav> <!-- end navbar-->
     </header>
@@ -56,7 +52,23 @@
     </section>
 
     <footer>
-        <p>&copy David Merced 2018</p>
+      <div class="container-fluid">
+        <div class='row' id='foot'>
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="copyR">&copy David Merced 2018</p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="navbar-nav"  id="searchbar">
+                <li><%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+                  <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control" %></li>
+                <li><%= form.submit 'Search', class: "btn btn-default" %>
+                <% end %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
