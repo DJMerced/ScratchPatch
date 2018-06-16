@@ -15,40 +15,32 @@
           <div class="col-xl-6 col-sm-12 clist">
             <div class="conint">
               <h3>Lorem ipsum dolor amet man braid kale chips organic</h3>
-              <p> gerstache vegan kitsch. Vice shaman schlitz readymade pok pok fam meditation organic direct trade messenger bag synth normcore you probably haven't heard of them vexillologist squid. Man braid retro everyday carry PBR&B, literally pok pok viral fixie yr taiyaki jianbing franzen air plant. Kogi glossier four dollar toast franzen neutra artisan readymade banh mi chartreuse poke literally seitan poutine. Seitan shoreditch bitters tbh pabst ennui synth succulents live-edge listicle narwhal food truck copper mug taiyaki umami. Yr craft beer flannel, lyft bespoke plaid synth blog brunch vice chillwave tumeric 90's. Hashtag jianbing irony kogi, beard health goth tbh lumbersexual flexitarian tofu gochujang +1 wolf.</p>
+              <p> gerstache vegan kitsch. Vice shaman schlitz readymade pok pok fam meditation organic direct trade messenger bag synth normcore you probably haven't heard of them vexillologist squid.  blog brunch vice chillwave tumeric 90's. Hashtag jianbing irony kogi, beard health goth tbh lumbersexual flexitarian tofu gochujang +1 wolf.</p>
             </div>
           </div>
           <div class="col-xl-6 col-sm-12 clist">
-            <form class="centermail">
-              <div class="col-lg-4 col-sm-12">
-                <div class="form_group">
-                  <label for="Name" class="contact_label">Name</label>
-                  <input type="text" id="name" required="required" placeholder="Your name" class="form-control" >
-                </div>
+
+            <%= flash[:notice] %>
+
+            <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+            <div class="row">
+              <div class="form-group">
+                <%= form.label :name %>
+                <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
               </div>
-              <div class="col-lg-4 col-sm-12">
-                <div class="form_group">
-                  <label for="Phone" class="contact_label">Phone</label>
-                  <input type="tel" id="phone" placeholder="Your phone number [OPTIONAL]" class="form-control">
-                </div>
+              <div class="form-group">
+                <%= form.label :email %>
+                <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
               </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="form_group">
-                  <label for="Email" class="contact_label">Email</label>
-                  <input type="email" id="email" required="required" placeholder="Your email" class="form-control" >
-                </div>
+              <div class="form-group">
+                <%= form.label :message %>
+                <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
               </div>
-              <div class="col-lg-8 col-sm-12">
-                <div class="textarea">
-                  <label for="message" class="contact_label">Message</label>
-                  <textarea style="resize:none" cols="40" rows="5" required="required" placeholder="Your message (50 character minimum, 250 character maximum)" id="message" class="message_box form-control" minlength="50" maxlength="250"></textarea>
-                  <p id=viscom></p>
-                </div>
+              <div>
+              <%= form.submit "Send", class: "form_label btn-success" %>
+              <% end %>
               </div>
-              <div class="col-lg-8 col-md-8">
-                <button type="submit" class="btn btn-light">Submit</button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
