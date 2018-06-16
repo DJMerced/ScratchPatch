@@ -71,21 +71,36 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#searchbar {
-  margin-top: 10px;
-  margin-right: 15px;
-}
 
 /***************FOOTER**************/
-footer {
+#foot {
   font-family: 'Denk One', sans-serif;
   background-color: #fff;
   width: 100%;
-  text-align:center;
   left: 0;
   bottom: 0;
   position: fixed;
   padding: 0.5em;
+  margin: 0px;
+}
+
+.copyR {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#searchbar {
+  list-style: none;
+}
+
+.form-control, {
+  border-width: medium;
+  border-color: #FFC18F;
+  border-style: inset;
+}
+
+.btn-default {
+  margin: 5px 15px;
 }
 
 
@@ -94,10 +109,10 @@ footer {
 ******INDEX*********************************************************************************************************************************************************************************************/
 
 .index-row {
-    background: white;
-    margin: 0 5%;
-    padding-bottom: 10px;
-    text-align: center;
+  background: white;
+  margin: 0 5%;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .indexSnippet {
@@ -136,9 +151,18 @@ footer {
 ********************************************************************************************************************************************************************************************************
 ******MEDIA QUERIES*********************************************************************************************************************************************************************************************/
 
+@media (max-width: 767.9px) {
+  .copyR {
+    text-align: center;
+  }
+  #searchbar {
+    text-align: center;
+  }
 
-@media (max-width: 425px) {
-  /*index media queries***********************************/
+  .form-control,
+  .btn-default {
+    max-width: 80%;
+  }
   .indexSnippet {
     max-width: 100%;
     margin-left: 0px;
@@ -152,15 +176,24 @@ footer {
     margin-top: 20px;
     padding-bottom: 0px;
   }
+
 }
 
-@media (max-width: 990px) {
+
+@media (min-width: 768px) {
+  #searchbar {
+      float: right;
+  }
+}
+
+
+@media (max-width: 991.9px) {
   .nottop {
     margin-top: 20px;
   }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 992px) {
   .dogs {
     margin-bottom: 20px;
   }
