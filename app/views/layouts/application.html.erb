@@ -42,15 +42,6 @@
               <li id="aboutover"><%= link_to "About", simple_pages_about_url %></li>
               <li id="conover"><%= link_to "Contact", simple_pages_contact_url %></li>
             </ul>
-            <ul class="nav pull-right">
-              <li>
-              <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-              <% else %>
-                <%= link_to('Login', new_user_session_path) %>
-              <% end %>
-              </li>
-            </ul>            
           </div>
         </div><!--end nav container-->
       </nav> <!-- end navbar-->
@@ -79,6 +70,13 @@
                   <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control" %></li>
                 <li><%= form.submit 'Search', class: "btn btn-default" %>
                 <% end %></li>
+                <li id="log" class="btn btn-default">
+                  <% if user_signed_in? %>
+                    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                  <% else %>
+                    <%= link_to('Login', new_user_session_path) %>
+                  <% end %>
+                </li>
               </ul>
             </div>
           </div>

@@ -58,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 #prodover a,
 #orderover a,
 #aboutover a,
-#conover a {
+#conover a,
+#log a {
   font-family: 'Denk One', sans-serif;
 }
 
@@ -66,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 #prodover a:hover,
 #orderover a:hover,
 #aboutover a:hover,
-#conover a:hover {
+#conover a:hover,
+#log a:hover {
   color: #FFC18F;
   text-decoration: none;
 }
