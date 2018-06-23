@@ -89,6 +89,10 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  ##so any dynamic links that show up inside emails from your development environment generate the right URLs
+  #Here, you'll need :host to be set to the actual host of your app
+  config.action_mailer.default_url_options = { host: ‘scratchpatch.herokuapp.com’ }
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
