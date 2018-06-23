@@ -47,6 +47,12 @@
       </nav> <!-- end navbar-->
     </header>
 
+
+
+    <%= flash[:notice] %>
+
+
+
     <section class="page">
       <%= yield %>
     </section>
@@ -64,6 +70,13 @@
                   <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control" %></li>
                 <li><%= form.submit 'Search', class: "btn btn-default" %>
                 <% end %></li>
+                <li id="log" class="btn btn-default">
+                  <% if user_signed_in? %>
+                    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                  <% else %>
+                    <%= link_to('Login', new_user_session_path) %>
+                  <% end %>
+                </li>
               </ul>
             </div>
           </div>
