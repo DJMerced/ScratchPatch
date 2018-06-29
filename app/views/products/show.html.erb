@@ -1,31 +1,33 @@
+<div>
+  <p id="notice"><%= notice %></p>
+  <%= @product.highest_rating_comment %>
 
-<p id="notice"><%= notice %></p>
-<%= @product.highest_rating_comment %>
+  <p>
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <p>
+    <strong>Image url:</strong>
+    <%= @product.image_url %>
+  </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+  <p>
+    <strong>Colour:</strong>
+    <%= @product.colour %>
+  </p>
 
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price $:</strong>
-  <%= @product.price %>
-</p>
+  <p>
+    <strong>Price $:</strong>
+    <%= @product.price %>
+  </p>
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+</div>
 
 <%= render 'new_comment' %>
 <%= render 'comments' %>
