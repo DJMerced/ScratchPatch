@@ -5,8 +5,8 @@ Housekeeping:
 #BUGS
 
 -/ App does not work on heroku
--/ Had to remove <%= render 'new_comment' %>  from app/views/products/show.html.erb or else the page will not load
-  --/ This means that new comments cannot be created dynamically on the web app
+
+-/ **FIXED new_comment BUG, THERE WAS A FREAKING STUPID LITTLE SPACE AT THE START OF THE ADDRESS, THAT'S IT!!!**
 
 #CSS, RESPONSIVE
 
