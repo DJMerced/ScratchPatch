@@ -1,6 +1,6 @@
 <div>
   <p id="notice"><%= notice %></p>
-  <%= @product.highest_rating_comment %>
+
 
   <p>
     <strong>Name:</strong>
@@ -29,8 +29,14 @@
   <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 </div>
 
-<%= render 'new_comment' %>
-<%= render 'comments' %>
+<hr />
+
+<div class="comm_section">
+  <div class="newComments"><%= render 'new_comment' %></div>
+  <div class="oldComments"><%= render 'comments' %></div>
+</div>
+
+<hr />
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
