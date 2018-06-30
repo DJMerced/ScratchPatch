@@ -6,16 +6,14 @@ Housekeeping:
 
 -/ App does not work on heroku
 
--/ **FIXED new_comment BUG, THERE WAS A FREAKING STUPID LITTLE SPACE AT THE START OF THE ADDRESS, THAT'S IT!!!**
-
 #CSS, RESPONSIVE
 
 -/ We have to make that search bar a little more aesthetically pleasing when it gets below 768px.
 
 #CSS, AESTHETICS
 
--/ ABOUT and ORDERS need the whole Spa treatment
+-/ Every page needs to be prettied up
 
--/ INDEX and CONTACT need a little work content
+#OTHER
 
--/ PRODUCTS just needs a nice look for the details below each picture.
+-/ **PAGINATION**, did not include __@products = Product.all.paginate(page: params[:page], per_page: 3)__ because I do not understand it's purpose yet (unless it's just to list 3 products per page and I have just been coding it wrong?)
