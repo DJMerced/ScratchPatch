@@ -9,10 +9,6 @@ Housekeeping:
 
 -/ Review the *summaries and tasks* of every SECTION
 
--/ If heroku issue cannot be solved by the end of the weekend, submit work to 5.11 so we can get started working on the final project [at least locally]
-
-  --/ *************** MAKE SURE TO ASK ALEXIS TO HELP WITH THE HEROKU PROBLEM ON SUNDAY!!!  ******************
-
 #######################################   ISSUES   #####################################################
 
 #BUGS
@@ -25,16 +21,12 @@ Housekeeping:
 
 #CSS, AESTHETICS
 
--/ Every main page needs to be prettied up :
-
-  --/ ORDERS
-  --/ ABOUT
-
-  --/ PRODUCTS
-      ---/ INDEX (really just to make the rows of data beneath each picture nice)
-      ---/ SHOW
-
-      ---/ Eventually all pages will have to be spruced up including DEVISE pages, PRODUCT sub-pages, USER pages, and thank_you page
+-/  Style the pages
+  --/ Tablet - Laptop:
+    ---/  ORDERS
+          PRODUCTS (and its sub-pages)
+          DEVISE (and its sub-pages)
+          USER (and its sub-pages)
 
 -/ Figure out why comments rating does not show star icons
 
