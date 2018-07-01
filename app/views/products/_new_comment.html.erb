@@ -1,0 +1,14 @@
+<% if signed_in? %>
+  <h4>Add a review:</h4>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+    <p>
+      <%= f.label :body, "Get yo comment on dawg"%><br>
+      <%= f.text_area :body, id: "comment_text_area" %>
+    </p>
+    <div class="rating"></div>
+
+    <p>
+      <%= f.submit "Submit", class: "btn-success" %>
+    </p>
+  <% end %>
+<% end %>
