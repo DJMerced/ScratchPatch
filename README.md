@@ -3,7 +3,7 @@
 Housekeeping:
 
 
-################################   ASSIGNMENTS   &   GOALS   ###############
+################################   ASSIGNMENTS   &   GOALS   #######################################
 
 #SECTION 5
 
@@ -13,7 +13,7 @@ Housekeeping:
 
   --/ *************** MAKE SURE TO ASK ALEXIS TO HELP WITH THE HEROKU PROBLEM ON SUNDAY!!!  ******************
 
-################################   ISSUES   #############################
+#######################################   ISSUES   #####################################################
 
 #BUGS
 
@@ -21,13 +21,22 @@ Housekeeping:
 
 #CSS, RESPONSIVE
 
--/ We have to make that search bar a little more aesthetically pleasing when it gets below 768px.
+-/ All pages should be (at this point) at least nicely designed for laptop screens, but make sure that they are responsive everywhere
 
 #CSS, AESTHETICS
 
--/ Every page needs to be prettied up
+-/ Every main page needs to be prettied up :
 
--/Figure out why comments rating does not show star icons
+  --/ ORDERS
+  --/ ABOUT
+
+  --/ PRODUCTS
+      ---/ INDEX (really just to make the rows of data beneath each picture nice)
+      ---/ SHOW
+
+      ---/ Eventually all pages will have to be spruced up including DEVISE pages, PRODUCT sub-pages, USER pages, and thank_you page
+
+-/ Figure out why comments rating does not show star icons
 
 #OTHER
 

@@ -12,13 +12,14 @@
     <div>
       <div class="container-fluid">
         <div class="row contact-row">
-          <div class="col-xl-6 col-sm-12 clist">
+          <div class="col-md-6 col-sm-12 clist">
             <div class="conint">
-              <h3>Lorem ipsum dolor amet man braid kale chips organic</h3>
+              <h3 class="con_intro">Lorem ipsum dolor amet man braid kale chips organic...</h3>
               <p> gerstache vegan kitsch. Vice shaman schlitz readymade pok pok fam meditation organic direct trade messenger bag synth normcore you probably haven't heard of them vexillologist squid.  blog brunch vice chillwave tumeric 90's. Hashtag jianbing irony kogi, beard health goth tbh lumbersexual flexitarian tofu gochujang +1 wolf.</p>
             </div>
           </div>
-          <div class="col-xl-6 col-sm-12 clist">
+          
+          <div class="col-md-6 col-sm-12 clist">
 
             <%= flash[:notice] %>
 
@@ -37,7 +38,7 @@
                 <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
               </div>
               <div>
-              <%= form.submit "Send", class: "form_label btn-success" %>
+              <%= form.submit "Send", class: "form_label btn-success conButt" %>
               <% end %>
               </div>
             </div>
