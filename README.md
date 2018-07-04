@@ -1,6 +1,4 @@
-# README
-
-Housekeeping:
+#Housekeeping:
 
 
 ################################   ASSIGNMENTS   &   GOALS   #######################################
@@ -13,7 +11,6 @@ Housekeeping:
 
 #BUGS
 
--/ App does not work on heroku
 
 #CSS, RESPONSIVE
 
@@ -24,9 +21,9 @@ Housekeeping:
 -/  Style the pages
   --/ Tablet - Laptop:
     ---/  ORDERS
-          PRODUCTS (and its sub-pages)
           DEVISE (and its sub-pages)
           USER (and its sub-pages)
+  --/ Double check each page's mobile-look
 
 -/ Figure out why comments rating does not show star icons
 
