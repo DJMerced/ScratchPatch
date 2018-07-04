@@ -5,7 +5,14 @@
 
 #SECTION 5
 
--/ Review the *summaries and tasks* of every SECTION
+-/ Fix 5.8 and 5.9
+  --/ Figure out why comments rating does not show star icons
+
+-/ 5.6 - Upload picture
+
+#SECTION 6
+
+-/ Create *User Test* for each model
 
 #######################################   ISSUES   #####################################################
 
@@ -23,9 +30,6 @@
     ---/  ORDERS
           DEVISE (and its sub-pages)
           USER (and its sub-pages)
-  --/ Double check each page's mobile-look
-
--/ Figure out why comments rating does not show star icons
 
 #OTHER
 
