@@ -1,6 +1,11 @@
 #Housekeeping:
 
 
+
+**6.3 - Having an issue with pathway for users_controller_spec.rb**
+
+
+
 ################################   ASSIGNMENTS   &   GOALS   #######################################
 
 #SECTION 5
@@ -12,7 +17,7 @@
 
 #SECTION 6
 
--/ Create *User Test* for each model
+-/ 6.2 - Create *User Test* for each model
 
 #######################################   ISSUES   #####################################################
 
