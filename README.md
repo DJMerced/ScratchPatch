@@ -2,7 +2,7 @@
 
 
 
-**6.3 - Having an issue with pathway for users_controller_spec.rb**
+**6.3 - Temporarily used root_path instead of new_user_session_path**
 
 
 
