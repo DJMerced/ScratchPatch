@@ -3,6 +3,7 @@
 
 
 **6.3 - Temporarily used root_path instead of new_user_session_path**
+**6.4 - cannot get test to work**
 
 
 
