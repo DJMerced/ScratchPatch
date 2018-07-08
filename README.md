@@ -1,6 +1,12 @@
 #Housekeeping:
 
 
+
+**6.3 - Temporarily used root_path instead of new_user_session_path**
+**6.4 - cannot get test to work**
+
+
+
 ################################   ASSIGNMENTS   &   GOALS   #######################################
 
 #SECTION 5
@@ -12,7 +18,7 @@
 
 #SECTION 6
 
--/ Create *User Test* for each model
+-/ 6.2 - Create *User Test* for each model
 
 #######################################   ISSUES   #####################################################
 
