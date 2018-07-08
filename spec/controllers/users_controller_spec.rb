@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'factory_bot'
 describe UsersController, type: :controller do
   let(:user) { User.create!(first_name: "Daisy", last_name: "Duke", email: "email1@email.com", password: "password1") }
   let(:user2) { User.create!(first_name: "Dairy", last_name: "Dune", email: "email2@email.com", password: "password2") }
@@ -21,7 +22,7 @@ describe UsersController, type: :controller do
      context 'when a user is not logged in' do
        it 'redirects to login' do
          get :show, params: { id: user.id }
-         expect(response).to redirect_to(root_path)
+         expect(response).to redirect_to(new_user_session_path)
        end
      end
   end
