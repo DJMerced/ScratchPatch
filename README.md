@@ -4,7 +4,8 @@
 
 **6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server**
 
-**6.6 - Have to create an email receipt for purchasers**
+**6.6 - Have to create an email receipt for purchasers
+      -Also for some reason the dropdown on the product page won't work unless you click the any product name on top of a picture first**
 
 
 
