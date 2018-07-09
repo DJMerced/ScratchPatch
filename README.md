@@ -4,6 +4,8 @@
 
 **6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server**
 
+**6.6 - Have to create an email receipt for purchasers**
+
 
 
 ################################   ASSIGNMENTS   &   GOALS   #######################################
