@@ -1,26 +1,23 @@
 #Housekeeping:
 
 
-
-**6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server**
-
-**6.6 - Have to create an email receipt for purchasers
-      -Also for some reason the dropdown on the product page won't work unless you click the any product name on top of a picture first**
-
+**6.6 - Email receipt doesn't seem to be working**
 
 
 ################################   ASSIGNMENTS   &   GOALS   #######################################
 
 #SECTION 5
 
--/ Fix 5.8 and 5.9
+**-/ Fix 5.8 and 5.9
   --/ Figure out why comments rating does not show star icons
 
--/ 5.6 - Upload picture
+-/ 5.6 - Upload picture**
 
 #SECTION 6
 
 -/ 6.2 - Create *User Test* for each model
+
+-/ 6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server
 
 #######################################   ISSUES   #####################################################
 
