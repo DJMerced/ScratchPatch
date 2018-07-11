@@ -1,24 +1,23 @@
 #Housekeeping:
 
 
-
-**6.3 - Temporarily used root_path instead of new_user_session_path**
-**6.4 - cannot get test to work**
-
+**6.6 - Email receipt doesn't seem to be working**
 
 
 ################################   ASSIGNMENTS   &   GOALS   #######################################
 
 #SECTION 5
 
--/ Fix 5.8 and 5.9
+**-/ Fix 5.8 and 5.9
   --/ Figure out why comments rating does not show star icons
 
--/ 5.6 - Upload picture
+-/ 5.6 - Upload picture**
 
 #SECTION 6
 
 -/ 6.2 - Create *User Test* for each model
+
+-/ 6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server
 
 #######################################   ISSUES   #####################################################
 
