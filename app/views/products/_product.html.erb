@@ -2,9 +2,10 @@
   <div class="row">
     <% @products.each do |product| %>
     <div class="col-md-6 col-xs-12">
+      <%#<% logger.debug "Product: #{product.name}"%>
       <div class="prodImg">
-      <a href="#"><h3><%= product.name %></h3></a>
-      <%= image_tag(product.image_url, class: "img-responsive") %>
+        <a href="#"><h3><%= product.name %></h3></a>
+        <%= image_tag(product.image_url, class: "img-responsive") %>
       </div>
       <div class="prodInfo">
         <div class="prodStuff">

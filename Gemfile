@@ -44,7 +44,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.7'
   gem 'rails-controller-testing'
-  gem "factory_bot_rails", "~> 4.0"  
+  gem "factory_bot_rails", "~> 4.0"
 end
 
 group :development do
@@ -64,6 +64,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -73,8 +77,8 @@ gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate', '~> 3.1.0'
 
+gem 'stripe'
 
+gem 'brakeman'
 
-group :production do
-  gem 'pg'
-end
+gem 'redis-rails'
