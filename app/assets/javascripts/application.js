@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery3
-//= require jquery.raty.js
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery.raty.js
+//= require_tree ../../../vendor/assets/javascripts
