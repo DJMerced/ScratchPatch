@@ -3,6 +3,8 @@
 
 **6.6 - Email receipt doesn't seem to be working**
 
+**6.9 - Cant get hover zoom to work**
+
 **6.10 - Having trouble getting new comments to appear (could be a result of section 5 fixes I have to do)**
 
 
