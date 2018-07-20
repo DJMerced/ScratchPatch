@@ -1,21 +1,47 @@
-# README
+#Housekeeping:
 
-Housekeeping:
+-/ For 6.12 I removed 6.11 because I didn't like Memcached or Dalli
+
+
+
+################################   ASSIGNMENTS   &   GOALS   #######################################
+
+#SECTION 5
+
+**Fix 5.8 and 5.9
+  Figure out why comments rating does not show star icons**
+
+**5.6 - Upload picture**
+
+#SECTION 6
+
+-/ 6.2 - Create *User Test* for each model
+
+-/ 6.5 - On the products "show" page - 'Stripe' cannot be identified on the local server, but it works fine on the production [Heroku] server
+
+**6.6 - Email receipt doesn't seem to be working**
+
+**6.9 - Cant get hover zoom to work**
+
+**6.10 - Having trouble getting new comments to appear (could be a result of section 5 fixes I have to do)**
+
+#######################################   ISSUES   #####################################################
 
 #BUGS
 
--/ App does not work on heroku
-
--/ **FIXED new_comment BUG, THERE WAS A FREAKING STUPID LITTLE SPACE AT THE START OF THE ADDRESS, THAT'S IT!!!**
 
 #CSS, RESPONSIVE
 
--/ We have to make that search bar a little more aesthetically pleasing when it gets below 768px.
+-/ All pages should be (at this point) at least nicely designed for laptop screens, but make sure that they are responsive everywhere
 
 #CSS, AESTHETICS
 
--/ ABOUT and ORDERS need the whole Spa treatment
+-/  Style the pages
+  --/ Tablet - Laptop:
+    ---/  ORDERS
+          DEVISE (and its sub-pages)
+          USER (and its sub-pages)
 
--/ INDEX and CONTACT need a little work content
+#OTHER
 
--/ PRODUCTS just needs a nice look for the details below each picture.
+-/ **PAGINATION**, did not include __@products = Product.all.paginate(page: params[:page], per_page: 3)__ because I do not understand it's purpose yet (unless it's just to list 3 products per page and I have just been coding it wrong?)

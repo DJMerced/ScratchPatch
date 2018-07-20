@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="col-md-6 col-xs-12">
+      <%#<% logger.debug "Product: #{product.name}"%>
+      <div class="prodImg">
+        <a href="#"><h3><%= product.name %></h3></a>
+        <%= image_tag(product.image_url, class: "img-responsive") %>
+      </div>
+      <div class="prodInfo">
+        <div class="prodStuff">
+          <p><%= product.description %></p>
+          <p>Colour: <%= product.colour %></p>
+          <strong>$ <%= product.price %></strong>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><p><%= link_to 'Show', product %>
+            <li><p><%= link_to 'Edit', edit_product_path(product) %>
+            <li><p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /col -->
+  <% end %>
+  </div>
+</div>
