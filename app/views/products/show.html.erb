@@ -1,6 +1,10 @@
-<div>
-  <p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
+<div>
+
+  <p>
+    <%= image_tag(@product.image_url, class: "img-responsive", width: 350) %>
+  </p>
 
   <p>
     <strong>Name:</strong>
@@ -13,11 +17,13 @@
   </p>
 
   <p>
+
     <strong>Image url:</strong>
     <%= image_tag(@product.image_url, width:'350', class: "img-responsive product_img img-zoom", data_zoom_images: @product.image_url) %>
   </p>
 
   <p>
+
     <strong>Colour:</strong>
     <%= @product.colour %>
   </p>
@@ -27,6 +33,7 @@
     <%= @product.price %>
   </p>
 
+
   <p>
     <%= form_with(url: '/payments/create') do |form| %>
       <%= hidden_field_tag(:product_id, @product.id) %>
@@ -34,17 +41,20 @@
     <% end %>
   </p>
 
-  <p>Average Rating: <div class='rated' id="average-rating" data-score='<%= @product.average_rating %>'></div> </p>
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 </div>
 
-<hr />
 
-<div class="comm_section">
-  <div class="newComments"><%= render 'new_comment' %></div>
-  <div class="oldComments"><%= render 'comments' %></div>
+  <hr />
+
+  <div class="comm_section">
+    <div class="newComments"><%= render 'new_comment' %></div>
+    <div class="oldComments"><%= render 'comments' %></div>
+  </div>
+
+  <hr />
+
 </div>
-
-<hr />
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
